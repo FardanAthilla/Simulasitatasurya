@@ -1,0 +1,276 @@
+body{
+    background-image: url(gambar/background.gif);
+    height: 1000px;
+}
+::-webkit-scrollbar{
+  width: 24px;
+}
+::-webkit-scrollbar-thumb{
+  background-color:#1b2143;
+  border-radius: 6px;
+}
+/* Matahari */
+#solar-system {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 800px;
+  }
+  
+  #sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #sun img {
+    width: 20rem;
+  }
+
+  /* Merkurius */
+  #merkurius-orbit {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    animation: orbit 5s linear infinite;
+    margin-left: -150px;
+    margin-top: -160px;
+}
+  #merkurius {
+    padding: 125px;
+    position: absolute;
+    left: 90px;
+    transform: rotate(-60deg);
+    animation: spin 10s linear infinite;
+  }
+  #merkurius img {
+    width: 10rem;
+  }
+  
+
+   /* Venus */
+   #venus-orbit {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    animation: orbit 8s linear infinite;
+    margin-left: -250px;
+    margin-top: -260px;
+}
+  #venus {
+    padding: 0px;
+    position: absolute;
+    right: 30px;
+    transform: rotate(-60deg);
+    animation: spin 10s linear infinite;
+  }
+  
+  #venus img {
+    width: 10rem;
+
+  }
+
+  /* Bumi */
+  #bumi-orbit {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    animation: orbit 10s linear infinite;
+    margin-left: -350px;
+    margin-top: -360px;
+}
+  #bumi {
+    padding: 0px;
+    position: absolute;
+    left: 90px;
+    transform: rotate(-60deg);
+    animation: spin 10s linear infinite;
+  }
+  
+  #bumi img {
+    width: 10rem;
+
+  }
+
+  /* Mars */
+  #mars-orbit {
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    animation: orbit 15s linear infinite;
+    margin-left: -450px;
+    margin-top: -460px;
+}
+  #mars {
+    padding: 0px;
+    position: absolute;
+    right: 170px;
+    transform: rotate(-60deg);
+    animation: spin 10s linear infinite;
+  }
+  
+  #mars img {
+    width: 10rem;
+
+  }
+  
+  /* Jupiter */
+  #jupiter-orbit {
+    width: 1300px;
+    height: 1300px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    animation: orbit 20s linear infinite;
+    margin-left: -650px;
+    margin-top: -660px;
+}
+  #jupiter {
+    padding: 0px;
+    position: absolute;
+    right: 330px;
+    transform: rotate(-60deg);
+    animation: spin 10s linear infinite;
+  }
+  
+  #jupiter img {
+    width: 10rem;
+
+  }
+
+  /* saturnus */
+  #saturnus-orbit {
+    width: 1500px;
+    height: 1500px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    animation: orbit 23s linear infinite;
+    margin-left: -750px;
+    margin-top: -760px;
+}
+  #saturnus {
+    padding: 0px;
+    position: absolute;
+    right: 370px;
+    transform: rotate(-60deg);
+    animation: spin 10s linear infinite;
+  }
+  #saturnus img {
+    width: 12rem;
+  }
+
+  /* uranus */
+  #uranus-orbit {
+    width: 1700px;
+    height: 1700px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    animation: orbit 29s linear infinite;
+    margin-left: -850px;
+    margin-top: -860px;
+}
+  #uranus {
+    padding: 0px;
+    position: absolute;
+    right: 480px;
+    transform: rotate(-60deg);
+    animation: spin 10s linear infinite;
+  }
+  
+  #uranus img {
+    width: 10rem;
+  }
+/* neptunus */
+  #neptunus-orbit {
+    width: 1900px;
+    height: 1900px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    animation: orbit 34s linear infinite;
+    margin-left: -950px;
+    margin-top: -960px;
+}
+  #neptunus {
+    padding: 0px;
+    position: absolute;
+    right: 550px;
+    transform: rotate(-60deg);
+    animation: spin 10s linear infinite;
+  }
+  
+  #neptunus img {
+    width: 10rem;
+  }
+
+/* Keyframenya agar bumi muter sama rotasi */
+  @keyframes orbit {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .back-button {
+    background-color: transparent;
+    border: 1px solid #1aeeef;
+    color: white;
+    padding: 60px;
+    font-size: 40px;
+    bottom: 50px;
+    right: 100px;
+    position: fixed;
+    border-radius: 100%;
+  }
+  .back-button:hover{
+    background-color: #1aeeef;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+    transition: 0.3s;
+}
